@@ -8,6 +8,6 @@
 </p>
 
 <button class="btn-primary" (click)="onDisplayDetails()">Display Details</button>
-<div *ngFor="let displayDetailsClick of displayDetailsClicks">
-  <span [ngStyle]="{backgroundColor: getBackgroundColor(displayDetailsClick)}" [ngClass]="{greaterThanFourColor: displayDetailsClick.count > 4}">{{displayDetailsClick.status}}</span>
+<div *ngFor="let displayDetailsClick of displayDetailsClicks; let i = index">
+  <span [ngStyle]="{backgroundColor: getBackgroundColor(i)}" [ngClass]="{greaterThanFourColor: i > 3}">{{displayDetailsClick.status}}</span>
 </div>

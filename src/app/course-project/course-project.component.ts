@@ -20,7 +20,7 @@ export class CourseProjectComponent implements OnInit {
     })
   }
 
-  getBackgroundColor(displayDetailsClick){
-    return (displayDetailsClick.count > 4 ? 'blue' : '');
+  getBackgroundColor(index){
+    return (index > 3 ? 'blue' : '');
   }
 }
