@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningAlertComponent } from './warningAlert/warningAlert.component';
-import { SuccessAlertComponent } from './success-alert/success-alert.component';
-import { CourseProjectComponent } from './course-project/course-project.component';
+import { HeaderComponent } from './src/app/header/header.component';
+import { ShoppingListSectionComponent } from './src/app/shopping-list-section/shopping-list-section.component';
+import { RecipesSectionComponent } from './src/app/recipes-section/recipes-section.component';
+import { RecipesListComponent } from './recipes-section/recipes-list/recipes-list.component';
+import { RecipesDetailComponent } from './recipes-section/recipes-detail/recipes-detail.component';
+import { RecipeItemComponent } from './recipes-section/recipes-list/recipe-item/recipe-item.component';
+import { ShoppingEditComponent } from './shopping-list-section/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent,
-    WarningAlertComponent,
-    SuccessAlertComponent,
-    CourseProjectComponent
+    HeaderComponent,
+    ShoppingListSectionComponent,
+    RecipesSectionComponent,
+    RecipesListComponent,
+    RecipesDetailComponent,
+    RecipeItemComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
