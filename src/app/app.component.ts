@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = '"Hello Angular app"';
   name = '';
+
   courseProject = false;
+  selectedTab: string = 'recipe';
+
+  setSelectedTab(tabType: string) {
+    this.selectedTab = tabType;
+  }
 }
