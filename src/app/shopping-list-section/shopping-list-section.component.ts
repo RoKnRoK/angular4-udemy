@@ -5,8 +5,7 @@ import { ShoppingListService } from './shopping-list.service';
 @Component({
   selector: 'app-shopping-list-section',
   templateUrl: './shopping-list-section.component.html',
-  styleUrls: ['./shopping-list-section.component.css'],
-  providers: [ShoppingListService]
+  styleUrls: ['./shopping-list-section.component.css']
 })
 export class ShoppingListSectionComponent implements OnInit {
 
