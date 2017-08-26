@@ -1,5 +1,5 @@
 import { Component, OnInit, /*Input*/ } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router, NavigationExtras } from '@angular/router';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 
@@ -30,6 +30,11 @@ export class RecipesDetailComponent implements OnInit {
   }
 
   onEdit(){
-    this.router.navigate(['edit'], {relativeTo: this.route});
+    this.router.navigate(['edit'], <NavigationExtras>{relativeTo: this.route});
+  }
+
+  onDelete(){
+    this.recipeService.deleteRecipe(this.id);
+    this.router.navigate(['/recipes']);
   }
 }
